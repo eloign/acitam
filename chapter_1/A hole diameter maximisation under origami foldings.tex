@@ -1,0 +1,13 @@
+\section{A hole diameter maximisation under origami foldings (and, perhaps, small bendings)}
+
+Suppose you have a surface $\mathcal S$ in $\mathbb{R}^3$ (if need be it's all pretty generalisable) with a hole in it defined by its boundary, that is a simple closed path $\partial : [0, 1] \to \mathbb{R}^2$ (so it is seen that the surface may have volume and the hole may not be 'flat'). Define $\mathfrak{o}: \mathcal{S} \to \mathcal{S}$ to be an "origami", that is the "twisting function". And let's define what "diameter" means: $d_\delta$ is said to be the diameter of the hole $\partial$ if we project orthogonally our configuration $(\mathcal S, \partial)$ to $(\mathcal S', \partial')$ respectively, where $\mathcal S'$ is a surface "locally parallel to the boundary $\partial$" (if possible); then let $d_\partial = \sup\limits_{a, b \in \text{Im}(\partial)}\|f(a) - f(b)\|$.
+
+\begin{enumerate}
+\item Given a configuration $(\mathcal S, \partial)$ what is the maximum $d_\partial$ achiavable and which origami $\mathfrak o$ leads to it?
+\item Given a surface $\mathcal S$ and an origami $\mathfrak o$ which hole $\partial$ of prefixed diameter $d_\delta$ would give the maximum diameter under $\mathfrak o$?
+\item Which (topological) properties does an origami have as a function?
+\end{enumerate}
+
+\begin{example}
+Suppose you have the configuration, where $\mathcal S$ is a square thin piece of paper and $\partial$ is a equilateral rhombic hole with its angles pointing orthogonally to the surface's sides. Twist the opposite sides of the square at the centres, that should yield a hole shaped like a crystal (triangle + square + triangle, i.e. a hexagon). If the former diameter was $d_1$ (of the square hole), then after applying such origami and calculating the latter diameter $d_2$ as described above (orthogonal projection) then the following formula is true: $d_2 = d_1(1 + \cos(\frac \alpha 4))\cos(\theta)$, where $\alpha$ measures how much we twisted the angles of the rhombic hole and $\theta$ is the angle between the surface and its projection. So, this origami ideally {\bf twices} the diameter.
+\end{example}

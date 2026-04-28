@@ -1,0 +1,66 @@
+\documentclass{book}
+
+\usepackage{emptypage}
+
+\usepackage{amsmath, amssymb, amsthm}
+
+\usepackage{hyperref}
+
+\usepackage{graphicx}
+
+\usepackage{lmodern}
+
+\newtheorem{theorem}{Theorem}[chapter]
+
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\theoremstyle{plain}
+\newtheorem{example}{Example}
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \fontsize{2cm}{2.3cm}\selectfont
+  \bfseries
+
+  \begin{tabular}{@{\hskip -40pt}r@{}}
+	A Comprehensive \\
+	Introduction \\
+	\it to \\
+	Applicable \\
+	Mathematics
+  \end{tabular}
+
+  \vspace*{\fill}
+\end{titlepage}
+
+\chapter*{Authors and contributors}
+\thispagestyle{empty}    % optional: no page number on this page
+
+{\sl
+
+\fontsize{0.5cm}{0.5cm}\selectfont
+
+Georgii Brovkin
+
+}
+
+\vfill
+
+\frontmatter
+
+\setcounter{tocdepth}{1} % to avoid everything deeper than sections
+\tableofcontents
+
+
+\mainmatter
+
+
+\chapter{Twists, knots, and other animals}
+\input{"chapter_1/A hole diameter maximisation under origami foldings.tex"}
+
+\end{document}
